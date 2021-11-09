@@ -27,10 +27,10 @@ public class BaseClass {
 		property.load(fi);
 		
 		//it will get the browser property from mvn command when we use mvn command - mvn test -Dbrowser=chrome
-		String browser = System.getProperty("browser");
+		//String browser = System.getProperty("browser");
 		
 		//it will get the property from properties file
-		//String browser = property.getProperty("browser");
+		String browser = property.getProperty("browser");
 		
 		System.out.println(browser);
 

@@ -1,4 +1,5 @@
-14:03:07.463 [TestNG-tests-1] INFO  com.fasterxml.jackson.databind.deser.Deserializers$Base - Navigated to baseUrl
-14:03:15.272 [TestNG-tests-1] INFO  com.fasterxml.jackson.databind.deser.Deserializers$Base - Validated Dashborad on home page
-14:03:15.310 [TestNG-tests-1] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x62eb8d77ff468840
-14:03:15.592 [AsyncHttpClient-1-6] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameDecoder - Decoding WebSocket Frame opCode=8
+15:23:22.545 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+15:23:22.554 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+15:23:22.554 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+15:23:22.554 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+15:23:22.554 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
