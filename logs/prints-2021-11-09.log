@@ -1,0 +1,4 @@
+14:03:07.463 [TestNG-tests-1] INFO  com.fasterxml.jackson.databind.deser.Deserializers$Base - Navigated to baseUrl
+14:03:15.272 [TestNG-tests-1] INFO  com.fasterxml.jackson.databind.deser.Deserializers$Base - Validated Dashborad on home page
+14:03:15.310 [TestNG-tests-1] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x62eb8d77ff468840
+14:03:15.592 [AsyncHttpClient-1-6] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameDecoder - Decoding WebSocket Frame opCode=8
