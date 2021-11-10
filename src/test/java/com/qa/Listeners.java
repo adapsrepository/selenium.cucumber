@@ -70,6 +70,7 @@ public class Listeners extends BaseClass implements ITestListener{
 
 	public void onFinish(ITestContext context) {
 		extent.flush();
+		driver.close();
 	}
 
 }

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="131.311172">
+    <testcase classname="Orange HRM - Assign Leave functionality" name="Validate Assign Leave Functionality" time="28.961425">
+        <system-out>
+            <![CDATA[Given I navigate to Orange HRM page.........................................passed
+And I enter username "Admin"................................................passed
+And I enter password "admin123".............................................passed
+When I click on Login button................................................passed
+Then I validate text "Dashboard" on homepage................................passed
+And I click on Assign leave tile............................................passed
+And I select value "Jasmine Morgan" from Employee name auto suggest dropdown in assign leave page.passed
+And I select value "CAN - Bereavement" from leave type dropdown in assign leave page.passed
+And I click on view details link and validate pop up data in assign leave page.passed
+And I select date from From Date date picker in assign leave page...........passed
+And I select date from To Date date picker in assign leave page.............passed
+And I click on assign button in assign leave page...........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Orange HRM - Recruitment" name="Validate blank search" time="21.603478">
+        <system-out>
+            <![CDATA[Given I navigate to Orange HRM page.........................................passed
+And I enter username "Admin"................................................passed
+And I enter password "admin123".............................................passed
+When I click on Login button................................................passed
+Then I validate text "Dashboard" on homepage................................passed
+And I click on Recruitment tab..............................................passed
+And I click on Search button in recruitment page............................passed
+Then I validate search results retreive "10" records in recruitment page....passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Orange HRM - Recruitment" name="Validate specific search" time="39.825162">
+        <failure message="org.openqa.selenium.NoSuchElementException: Cannot locate option with text: IT Manager&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'DESKTOP-D1GOMAD', ip: '192.168.0.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)&#13;&#10;&#9;at stepDefinitions.StepDefinition.i_select_value_from_job_title_dropdown_in_recruitment_page(StepDefinition.java:147)&#13;&#10;&#9;at ✽.And I select value IT Manager from job title dropdown in recruitment page(orangeHRM_recruitment.feature:16)&#13;&#10;">
+            <![CDATA[Given I navigate to Orange HRM page.........................................passed
+And I enter username "Admin"................................................passed
+And I enter password "admin123".............................................passed
+When I click on Login button................................................passed
+Then I validate text "Dashboard" on homepage................................passed
+And I click on Recruitment tab..............................................passed
+And I select value IT Manager from job title dropdown in recruitment page...failed
+And I select value Associate IT Manager from vacancy dropdown in recruitment page.skipped
+And I select value Odis Adalwin from hiring manager dropdown in recruitment page.skipped
+When I click on Search button in recruitment page...........................skipped
+Then I validate search results retreive 1 records for specific search in recruitment page.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate option with text: IT Manager
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-D1GOMAD', ip: '192.168.0.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at stepDefinitions.StepDefinition.i_select_value_from_job_title_dropdown_in_recruitment_page(StepDefinition.java:147)
+	at ✽.And I select value IT Manager from job title dropdown in recruitment page(orangeHRM_recruitment.feature:16)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Orange HRM - Recruitment" name="Validate specific search 2" time="40.921107">
+        <failure message="org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Software Engineer&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'DESKTOP-D1GOMAD', ip: '192.168.0.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)&#13;&#10;&#9;at stepDefinitions.StepDefinition.i_select_value_from_job_title_dropdown_in_recruitment_page(StepDefinition.java:147)&#13;&#10;&#9;at ✽.And I select value Software Engineer from job title dropdown in recruitment page(orangeHRM_recruitment.feature:16)&#13;&#10;">
+            <![CDATA[Given I navigate to Orange HRM page.........................................passed
+And I enter username "Admin"................................................passed
+And I enter password "admin123".............................................passed
+When I click on Login button................................................passed
+Then I validate text "Dashboard" on homepage................................passed
+And I click on Recruitment tab..............................................passed
+And I select value Software Engineer from job title dropdown in recruitment page.failed
+And I select value Software Engineer from vacancy dropdown in recruitment page.skipped
+And I select value Odis Adalwin from hiring manager dropdown in recruitment page.skipped
+When I click on Search button in recruitment page...........................skipped
+Then I validate search results retreive 1 records for specific search in recruitment page.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Software Engineer
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-D1GOMAD', ip: '192.168.0.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at stepDefinitions.StepDefinition.i_select_value_from_job_title_dropdown_in_recruitment_page(StepDefinition.java:147)
+	at ✽.And I select value Software Engineer from job title dropdown in recruitment page(orangeHRM_recruitment.feature:16)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

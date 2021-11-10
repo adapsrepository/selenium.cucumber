@@ -1,3 +1,6 @@
 pageObjects\LoginPage.class
 pageObjects\HomePage.class
+pageObjects\RecruitmentPage.class
 resources\BaseClass.class
+pageObjects\AssignLeavePage.class
+resources\ExtentReportNG.class

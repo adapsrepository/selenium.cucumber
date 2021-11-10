@@ -1,1 +1,5 @@
+com\qa\Listeners.class
+cucumber\options\TestRunner.class
+com\qa\TC002_RecruitmentSearch_Duplicate.class
+stepDefinitions\StepDefinition.class
 com\qa\TC001_RecruitmentSearch.class
